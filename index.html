@@ -35,11 +35,15 @@
                     <img src="images/jane-m.jpg" alt="jane" class="avatar-m">
                 </div>
                 <div class="card-body">
-                    <h1>Jane Doe</h1>
+                    <h1 id="name">Jane Doe</h1>
                     <h3><img src="icons/map-marker.png" alt="pin" class="icon-s"> Seattle</h3>
                     <p>Developer | Engineer | Problem Solver<br>
                     Master of shadows and the Internet!</p>
-                    <p><a href="#"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
+                    <p>
+                        <a href="#" onclick="rename('#name')">
+                            <img src="icons/gear.png" alt="gear" class="icon-s"> edit profile
+                        </a>
+                    </p>
                 </div>
             </div>
 
@@ -67,24 +71,28 @@
                     <h3>Connection Requests</h3>
                 </div>
                 <ul class="card-list">
-                    <li class="card-list-item">
+                    <li class="card-list-item" id="ToddE">
                         <span>
                             <img src="images/todd-s.jpg" alt="todd" class="avatar-s">
                             Todd E
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon"
+                            onclick="hide('#ToddE')">
+                            <img src="icons/close-circle.png" alt="close" class="icon" 
+                            onclick="hide('#ToddE')">
                         </span>
                     </li>
-                    <li class="card-list-item">
+                    <li class="card-list-item" id="PhilE">
                         <span>
                             <img src="images/phil-s.jpg" alt="phil" class="avatar-s">
                             Phil E
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon"
+                            onclick="hide('#PhilE')">
+                            <img src="icons/close-circle.png" alt="close" class="icon"
+                            onclick="hide('#PhilE')">
                         </span>
                     </li>
                 </ul>
